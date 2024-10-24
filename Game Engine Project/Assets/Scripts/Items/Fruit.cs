@@ -9,7 +9,7 @@ public class Fruit : MonoBehaviour
 
     private void Awake()
     {
-        fruit = new Collectable("fruit", 1, 0);
+        fruit = new Collectable(1);
     }
 
     private void OnCollisionEnter(Collision other)

@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    public string nameCollectable;
-
    public int score;
-   public int restoreHP;
 
 
-   public Collectable(string name, int scorevalue, int restoreHPvalue)
+   public Collectable(int scorevalue)
    {
-    this.nameCollectable = name;
+    
     this.score = scorevalue;
-    this.restoreHP = restoreHPvalue;
    }
 
     public void UpdateScore()
@@ -22,8 +18,4 @@ public class Collectable : MonoBehaviour
         ScoreManager.scoreManager.UpdateScore(score);
     }
 
-    public void UpdateHealth()
-    {
-        PlayerManager.playermanager.player.GetComponent<PlayerInventoryStats>().RestoreHealth(this.restoreHP);
-    }
 }
