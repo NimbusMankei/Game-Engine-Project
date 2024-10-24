@@ -1,3 +1,11 @@
+# PLEASE DOWNLOAD THE DOCX VERSION IT HAS THE DIAGRAMS AND THINGS
+
+
+
+
+
+
+
 # Game-Engine-Project
  
 Nathan V (100886412) Programmer
