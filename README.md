@@ -1,6 +1,7 @@
 # PLEASE DOWNLOAD THE DOCX VERSION IT HAS THE DIAGRAMS AND THINGS
 
 
+# Youtube link to Video REPORT: https://youtu.be/XeeuOddCqc0
 
 
 
@@ -42,9 +43,7 @@ The way the button was implemented was again using the UI manager first and plac
 Factory Pattern Implementation/Explanation
 The Factory Command pattern is used with the fruits system. Each Fruit provides a specific boost and points for the game, depending on which fruit is taken by the player. For example, If the player selects a banana, they get a 3 point bonus and more speed.
 
-
-
-
+# Game Description: A very simple parkour game with collectables and variety of movement to explore and collect fruits and other items
 
 
 Observer Implementation/Explanation
