@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Movement")]
-    public float moveSpeed;
-    public AudioSource footStepsSounds;
-
-    public float groundDrag;
-
-    public float jumpForce;
-    public float jumpCooldown;
-    public float airMultiplier;
+    [SerializeField] private PlayerStats P1Stats;
     bool readyToJump;
+    public AudioSource footStepsSounds;
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
@@ -31,6 +24,15 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+
+    //Health&Inventory
+    PlayerInventoryStats PI;    
+
+    private void Awake()
+    {
+        PI = GetComponent<PlayerInventoryStats>();
+
+    }
 
     private void Start()
     {
@@ -50,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
         //playerdrag
         if(grounded)
-            rb.drag = groundDrag;
+            rb.drag = P1Stats.groundDrag;
         else    
             rb.drag = 0;
 
@@ -66,6 +68,16 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Q))
         {
             UnlockMouse();
+        }
+
+        if (Input.GetKey(KeyCode.P))
+        {
+            PI.TakeDamage(2);
+        }
+
+        if (Input.GetKey(KeyCode.O))
+        {
+            RestoreHealth();
         }
     }
 
@@ -87,7 +99,15 @@ public class PlayerMovement : MonoBehaviour
             Jump();
             SoundManager.PlaySound(SoundType.Jump);
 
-            Invoke(nameof(ResetJump), jumpCooldown);
+            Invoke(nameof(ResetJump), P1Stats.jumpCooldown);
+        }
+    }
+    
+    void RestoreHealth()
+    {
+        if(Inventory.inventory.consumableItemsController.GetItem("HealthPill").GetOwnedQuantity() != 0)
+        {
+            Inventory.inventory.consumableItemsController.UseItem("HealthPill");
         }
     }
 
@@ -97,9 +117,9 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         if (grounded) //onground
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * P1Stats.moveSpeed * 10f, ForceMode.Force);
         else if (!grounded) //inair
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * P1Stats.moveSpeed * 10f * P1Stats.airMultiplier, ForceMode.Force);
             
     }
 
@@ -108,9 +128,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         //limitspeed
-        if(flatVel.magnitude > moveSpeed)
+        if(flatVel.magnitude > P1Stats.moveSpeed)
         {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
+            Vector3 limitedVel = flatVel.normalized * P1Stats.moveSpeed;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
     }
@@ -120,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
         //makesureverticalvelociyis0
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        rb.AddForce(transform.up * P1Stats.jumpForce, ForceMode.Impulse);
     }
 
     private void ResetJump()
