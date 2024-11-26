@@ -1,7 +1,8 @@
 # PLEASE DOWNLOAD THE DOCX VERSION IT HAS THE DIAGRAMS AND THINGS
 # Game-Engine-Project
 ---------------------------------------------------------------------------------------------------------------------------------
-Version 2.0
+# Version 2.0
+# Youtube link to Video REPORT: https://youtu.be/Hivycmj0HxQ
 Nathan’s Roles & Responsibilities:
 Programmer & was put in charge of the Performance Profiling & Optimization Design Patterns. (Implemented, Scriptable Objects and Inventory System)
 Rish’s Roles & Responsibilities:
@@ -81,6 +82,7 @@ Health Bar
 The health bar was implemented by again  UI canvas object to show the health bar model and scripts attached to both the player and Manager. The player script lets us choose the amount of health the player has, while the manager script takes that number and then presents in the health bar. This helps the experience, by showing players they need to be carful when exploring as they could be enemies or obstacles that could damage the player and possibly kill them.
 
 References and Help:
+“FMOD.” Fmod.Com, www.fmod.com/. Accessed 26 Nov. 2024. 
 “FIRST PERSON MOVEMENT in 10 MINUTES - Unity Tutorial.” YouTube, YouTube, www.youtube.com/watch?v=f473C43s8nE. Accessed 24 Oct. 2024. 
 “PLEASE Use a Unity SOUND MANAGER! - Full Tutorial.” YouTube, YouTube, www.youtube.com/watch?v=g5WT91Sn3hg. Accessed 24 Oct. 2024. 
 “How to Add Footsteps Sounds in Unity.” YouTube, YouTube, www.youtube.com/watch?v=uNYF1gsvD1A. Accessed 24 Oct. 2024. 
