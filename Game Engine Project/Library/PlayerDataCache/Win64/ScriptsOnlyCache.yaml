@@ -2,7 +2,9 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CharacterHealth
+    - FirstAidKit
     - Fruit
+    - Inventory
     - LoadGameplay
     - LoadMainMenu
     - LoadMaze
@@ -10,7 +12,9 @@ ScriptsOnlyBuild:
     - MoveCamera
     - PlayerCam
     - PlayerInventoryStats
+    - PlayerManager
     - PlayerMovement
+    - PlayerStats
     - Restart
     - ScoreManager
     - SettingsMenuView
@@ -143,6 +147,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3830}
     - Class: 114
+      Script: {instanceID: 4306}
+    - Class: 114
       Script: {instanceID: 4796}
     - Class: 114
       Script: {instanceID: 5036}
@@ -153,6 +159,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5738}
     - Class: 114
+      Script: {instanceID: 5756}
+    - Class: 114
       Script: {instanceID: 5976}
     - Class: 114
       Script: {instanceID: 6056}
@@ -161,9 +169,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6312}
     - Class: 114
+      Script: {instanceID: 6832}
+    - Class: 114
       Script: {instanceID: 6862}
     - Class: 114
       Script: {instanceID: 6910}
+    - Class: 114
+      Script: {instanceID: 7514}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -689,7 +701,7 @@ ScriptsOnlyBuild:
     className: EnvMapAnimator
   - hash:
       serializedVersion: 2
-      Hash: 4da379a6539b31f69a78af928160e386
+      Hash: fe1309113835a8a834acf91546138544
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerMovement
@@ -1163,7 +1175,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 21e3a03d108edc91c2795ebdd63abde1
+      Hash: 7ec4efbcb5531ea75a814c793e23c996
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Collectable
@@ -1383,6 +1395,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TeleType
+  - hash:
+      serializedVersion: 2
+      Hash: a5c1217a797235b6d9f4c8c0592b5026
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerStats
   - hash:
       serializedVersion: 2
       Hash: b6e08e9716184d5736af5af9ffaf1513
