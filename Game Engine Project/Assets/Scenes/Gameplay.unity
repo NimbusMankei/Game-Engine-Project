@@ -581,6 +581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere
       objectReference: {fileID: 0}
+    - target: {fileID: 1146668121840718450, guid: 2e843e4cde704cf4fb990e4fc644b38a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8620558337722558709, guid: 2e843e4cde704cf4fb990e4fc644b38a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.293602
@@ -888,7 +892,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!114 &662010981
 MonoBehaviour:
@@ -1424,6 +1428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146668121840718450, guid: 2e843e4cde704cf4fb990e4fc644b38a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8620558337722558709, guid: 2e843e4cde704cf4fb990e4fc644b38a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.211395
@@ -1492,7 +1500,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!114 &917038087
 MonoBehaviour:
@@ -2041,7 +2049,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!114 &1419373347
 MonoBehaviour:
@@ -2602,7 +2610,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!114 &1801064661
 MonoBehaviour:
@@ -3247,6 +3255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146668121840718450, guid: 2e843e4cde704cf4fb990e4fc644b38a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8620558337722558709, guid: 2e843e4cde704cf4fb990e4fc644b38a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.83885
@@ -3461,6 +3473,10 @@ PrefabInstance:
     - target: {fileID: 1146668121840718450, guid: 2e843e4cde704cf4fb990e4fc644b38a, type: 3}
       propertyPath: m_Name
       value: Sphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146668121840718450, guid: 2e843e4cde704cf4fb990e4fc644b38a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8620558337722558709, guid: 2e843e4cde704cf4fb990e4fc644b38a, type: 3}
       propertyPath: m_LocalPosition.x
